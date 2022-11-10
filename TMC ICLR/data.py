@@ -17,7 +17,7 @@ class Multi_view_data(Dataset):
         super(Multi_view_data, self).__init__()
         self.root = root
         self.train = train
-        data_path = self.root + '.mat'
+        data_path = self.root + '.mat'  #手写数据集为mat文件
 
         dataset = sio.loadmat(data_path)
         view_number = int((len(dataset) - 5) / 2)
