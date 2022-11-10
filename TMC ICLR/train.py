@@ -42,7 +42,7 @@ if __name__ == "__main__":
     parser.add_argument('--lr', type=float, default=0.0003, metavar='LR',
                         help='learning rate')
     args = parser.parse_args()
-    args.data_name = 'handwritten_6views'
+    args.data_name = 'handwritten_6views' #手写数据集
     args.data_path = 'datasets/' + args.data_name
     args.dims = [[240], [76], [216], [47], [64], [6]]
     args.views = len(args.dims)
